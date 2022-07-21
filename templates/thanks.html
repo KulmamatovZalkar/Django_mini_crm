@@ -1,0 +1,25 @@
+{% extends 'base.html' %} 
+
+{% block thanks %}
+<!-- Спасибо -->
+<section>
+  
+  {% if name %}
+  <div class="container">
+    <center style="margin-top: 35%; margin-bottom: 35%">
+      <h1> 
+        {{name}} 
+        {{ phone_number }} <br> Спасибо за заявку!</h1>
+    </center>
+  </div>
+  {% else %}
+  <div class="container">
+    <center style="margin-top: 35%; margin-bottom: 35%">
+      <h1> Спасибо Страница!</h1>
+    </center>
+  </div>
+  {% endif %}
+
+</section>
+<!-- Спасибо -->
+{% endblock thanks %}
